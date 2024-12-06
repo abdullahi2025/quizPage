@@ -1,0 +1,180 @@
+
+:root {
+  --color-block-1: #191716;
+  --color-block-2: #E6AF2E;
+  --color-block-3: #E0E2DB;
+  --color-block-4: #BEB7A4;
+ }
+ 
+ 
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('../images/quizgamebackgroundimage.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--color-block-3);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+ }
+ 
+ 
+ .container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+ }
+ 
+ 
+ h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+ }
+ 
+ 
+ .button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+ 
+ 
+ button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-block-2);
+  color: var(--color-block-3);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ 
+ button:hover {
+  background-color: var(--color-block-2);
+  color: var(--color-block-4);
+  transform: scale(1.1);
+ }
+ 
+ 
+ #items {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction with icons */
+  z-index: 1; /* Ensure icons appear above other content */
+ }
+ 
+ 
+ .icon {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  animation: float 5s ease-in-out infinite, spin 3s linear infinite;
+  opacity: 0;
+ }
+ 
+ 
+ /* Float animation for the icons */
+ @keyframes float {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+ }
+ 
+ 
+ /* Spin animation for the icons */
+ @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+ }
+ 
+  /*The home button. Goes back to the homepage when clicked*/
+  .homeButton button{
+    position: fixed;
+    top:405px;
+    left:40%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--color-block-2);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 300px;
+    height: 80px;
+    }
+   
+   
+  .homeButton{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    }
+    
+  .homeButton button:hover{
+    background-color:#FCD12A;
+    }
+     
+ 
+ 
+ 
+ 
+ #ready-set-go {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 10;
+  display: none;
+ }
+ 
+ 
+ #ready-set-go.show-message {
+  display: block;
+  animation: fadeIn 1s ease-out;
+ }
+ 
+ 
+ /* Fade-in animation */
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+ }
+
+ @media (max-width: 1200px){
+  .homeButton button {
+    left: 20%;
+    top: 430px;
+    width: 230px;
+    height: 60px;
+  }
+ }
+ 

@@ -1,0 +1,151 @@
+:root {
+  --color-block-1: #191716;
+  --color-block-2: #E6AF2E;
+  --color-block-3: #E0E2DB;
+  --color-block-4: #BEB7A4;
+
+  --color-background: #3D348B;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('quizgamebackgroundimage.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .button-container button{
+    padding: 20px;
+    margin: 10px auto;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-block-2);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 1000px; ;
+    height: 100px;
+  }
+  
+  button:hover {
+    background-color:#FCD12A;
+  }
+
+
+.text-box {
+    background-color: white; 
+    color: black;            
+    padding: 20px;          
+    margin: 20px auto;       
+    border-radius: 10px;     
+    max-width: 80%;          
+    text-align: center;      
+    font-size: 1.2rem;       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+.backButton button{
+  position: fixed;
+  top:20px;
+  left:0%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-block-2);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  height: 50px;
+
+}
+.backButton{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container{
+  padding-bottom: 90px;
+}
+.backButton button:hover{
+  background-color:#FCD12A;
+}
+
+.progress {
+  width: 1000px;
+  height: 30px;
+  background-color: white; /* Light grey background */
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--color-background); /* Blue bar color */
+  transition: width 0.5s ease; /* Smooth animation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+}
+
+@media (max-width: 1200px){
+  body{
+    height: auto;
+    padding: 10px;
+  }
+  .container{
+    width: 90%;
+  }
+  .button-container button{
+    width: 90%;
+    height: 60px;
+    font-size: 0.9rem;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+  .progress{
+    width: 90%;
+    height: 20px;
+  }
+}
+
+button.correct {
+  outline: 5px solid green;
+}
+
+button.incorrect{
+  outline: 5px solid red;
+}

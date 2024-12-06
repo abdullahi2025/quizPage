@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Quiz Page</title>
+ <link rel="stylesheet" href="../css/TopicsCSS.css">
+</head>
+<body>
+ <div class="container">
+   <h1>Choose your topic to start the game!</h1>
+   <div class="button-container">
+     <button class="pop-culture" data-href="popQuiz.html">Pop Culture</button>
+     <button class="Sports" data-href="sportsQuiz.html">Sports</button>
+     <button class="food-and-drink" data-href="foodQuiz.html">Foods</button>
+   </div>
+   <div id="quiz-container" class="hidden">
+     <h2 id="quiz-title"></h2>
+     <div id="question-section"></div>
+   </div>
+ </div>
+ <div class="homeButton">
+  <a href="StartPage.html" id="homeB"><button>Home Button</button></a>
+ </div>
+
+
+ <div id="items"></div>
+ <div id="ready-set-go" class="hidden">Ready, Set, Go!</div>
+ <script src="../js/TopicsPage.js"></script>
+</body>
+</html>

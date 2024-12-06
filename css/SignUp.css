@@ -1,0 +1,111 @@
+:root {
+    --color-block-1: #191716;
+    --color-block-2: #E6AF2E;
+    --color-block-3: #E0E2DB;
+    --color-block-4: #BEB7A4;
+
+    --color-background: #3D348B;
+    --color-backgroundDeep: #08061c;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(var(--color-background), var(--color-backgroundDeep));
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"], input[type="password"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-block-1);
+    color: white;
+  }
+
+  input::placeholder {
+    color: #ddd;
+  }
+
+  button {
+    padding: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-block-2);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #FCD12A;
+    color: white;
+  }
+
+  .bottom-tab {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #login-button {
+    color: var(--color-block-3);
+    background-color: transparent; /* Ensures no default button background */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  #login-button:hover {
+    color: var(--color-block-2);
+}
+
+
+
+.backButton button{
+  position: fixed;
+  top:20px;
+  left:0%;
+  z-index: 1000;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-block-2);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  height: 50px;
+ 
+}
+
+.backButton{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+.container{
+  padding-bottom: 90px;
+}
+.backButton button:hover{
+  background-color:#FCD12A;
+}

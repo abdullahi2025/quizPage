@@ -1,0 +1,109 @@
+:root {
+  --color-block-1: #191716;
+  --color-block-2: #E6AF2E;
+  --color-block-3: #E0E2DB;
+  --color-block-4: #BEB7A4;
+ 
+ 
+  --color-background: #3D348B;
+  --color-backgroundDeep: #08061c;
+ }
+ 
+ 
+ body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ background-image: linear-gradient(var(--color-background), var(--color-backgroundDeep));
+ color: #fff;
+ text-align: center;
+ display: flex;
+ flex-direction: column; /* Stack items vertically */
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ }
+ 
+ 
+ .image-container {
+ margin-bottom: 20px; /
+ }
+ 
+ 
+ .image-outside-container {
+ max-width: 200px;
+ height: auto; /* Maintain aspect ratio */
+ border-radius: 10px; /* Add rounded corners */
+ display: block;
+ margin: 0 auto; /* Center the image horizontally */
+ }
+ 
+ 
+ .container {
+ background: rgba(0, 0, 0, 0.7);
+ padding: 20px;
+ border-radius: 10px;
+ text-align: center;
+ }
+ 
+ 
+ 
+ 
+ h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+ }
+ 
+ 
+ .button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+ 
+ 
+ button {
+  padding: 10px 0px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-block-2);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 800px;
+  height: 75px;
+ }
+ 
+ 
+ button:hover {
+  background-color: var(--color-block-2);
+  color: var(--color-block-4);
+ }
+ @media (max-width: 710px){ /* phones */
+  button {
+    width: 270px;
+  }
+ }
+ 
+ 
+ 
+ 
+ .bottom-tab {
+  margin-top: 20px;
+  text-align: center;
+ }
+ 
+ 
+ #login-button {
+  color: var(--color-block-3);
+  background-color: transparent; /* Ensures no default button background */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+ }
+ 
+ 
+ #login-button:hover {
+  color: var(--color-block-2);
+ }
+ 

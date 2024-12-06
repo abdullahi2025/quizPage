@@ -1,0 +1,12 @@
+{
+    "users": {"player1": {
+            "scores": [100, 200, 150]
+        },
+        "player2": {
+            "scores": [300, 250]
+        },
+        "player3": {
+            "scores": [50, 75, 125]
+        }
+    }
+}
